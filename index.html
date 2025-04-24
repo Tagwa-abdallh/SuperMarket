@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=house" />
+</head>
+<body>
+
+ <div class="container">
+
+
+    <header class="header">
+        <h1 id="logoText">Super Market</h1>
+        <button id="langBtn" class="engine">عربي</button>
+      </header>
+    
+
+
+
+      <div class="gallery-wrap">
+        <img src="./img/left-arrow.png" id="btnleft">
+        <div class="gallery">
+          <div>
+            <span><img src="./img/img1.jpg" ></span>
+            <span><img src="./img/img 2.jpg" ></span>
+            <span><img src="./img/img 5.jfif" ></span>
+          </div>
+          <div>
+            <span><img src="./img/img3.jpg" ></span>
+            <span><img src="./img/img 4.jpg" ></span>
+            <span><img src="./img/img1.jpg" ></span>
+          </div>
+          <div>
+            <span><img src="./img/img 5.jfif" ></span>
+            <span><img src="./img/img6.jfif" ></span>
+            <span><img src="./img/img3.jpg" ></span>
+          </div>
+        </div>
+        <img src="./img/right-arrow.png" id="btnright">
+      </div>
+      
+
+   
+     <div >
+      <h1>HOW TO MAKE A VIDEO GALLARY</h1>
+      <div class="row">
+      <div class="col">
+        <div class="feature-img">
+          <img src="./img/img1.jpg" style="width: 100%;">
+          <img src="./img/play-button.png" class="play-btn" onclick="playVideo('./Video/2.mp4')">
+        </div>
+      </div>
+      <div class="col">
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="./img/img 2.jpg" >
+            <img src="./img/play-button.png" class="play-btn" onclick="playVideo('./Video/1.mp4')">
+          </div>
+          <p>How to add multiple videos or to add <br> multiple videos How to add  </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="./img/img3.jpg" >
+            <img src="./img/play-button.png" class="play-btn" onclick="playVideo('./Video/3.mp4')">
+          </div>
+          <p>How to add multiple videos or to add <br> multiple videos How to add  </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="./img/img 4.jpg" >
+            <img src="./img/play-button.png" class="play-btn" onclick="playVideo('./Video/4.mp4.mp4')">
+          </div>
+          <p>How to add multiple videos or to add <br> multiple videos How to add  </p>
+        </div>
+      </div>
+     </div> 
+    </div>
+  
+    <div class="video-player" id="videoPlayer">
+       <video style="width:100% ; height: 500px" controls autoplay id="myVideo">
+        <source src="./Video/1.mp4" type="video.mp4">
+      </video>
+      <img src="./img/delete.png" class="close-btn" onclick="stopVideo()">
+    </div>
+      
+ </div>
+
+ <footer>
+  <div class="footerContainer">
+    <div class="footerNav">
+      <ul>
+        <img src="./img/home.png" id="imgIcon">
+        <li><a href="">Home</a></li>
+      </ul>
+      <ul>
+        <img src="./img/list.png" id="imgIcon">
+        <li><a href="">MENU</a></li>
+      </ul>
+      <ul>
+        <img src="./img/gallery.png" id="imgIcon">
+        <li><a href="">GALLARY</a></li>
+      </ul>
+      <ul>
+        <img src="./img/star.png" id="imgIcon">
+        <li><a href="">RATE US</a></li>
+      </ul>
+      <ul>
+        <img src="./img/apple.png" id="imgIcon">
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+   </div>
+  
+   <div class="footerBottom">
+    <p>copyright &copy;2025; Designed by <span class="designer">Tgawa Abdallh</span></p>
+   </div>
+ </footer>
+
+ 
+
+ 
+
+
+  <script src="main.js"> </script>
+
+
+</body>
+</html>
